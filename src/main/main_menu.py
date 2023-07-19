@@ -17,7 +17,7 @@ class MainMenu:
     def play(self):
         game_loop = GameLoop(self.game_display)
         start_time = time.time()
-        game_loop.render_environment(start_time)
+        game_loop.render_environment(start_time, 2)
 
     @staticmethod
     def quit_game():
