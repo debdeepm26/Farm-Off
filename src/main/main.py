@@ -2,6 +2,7 @@
 import os
 import pygame
 from main_menu import MainMenu
+from game_loop import GameLoop
 
 
 def main():
@@ -15,6 +16,7 @@ def main():
     game_display = pygame.display.set_mode((screen_width, screen_height), pygame.RESIZABLE)
 
     main_menu = MainMenu(game_display)
+
     main_menu.render()
 
     pygame.quit()
