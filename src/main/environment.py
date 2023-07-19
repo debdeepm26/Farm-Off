@@ -8,7 +8,7 @@ class Environment:
         self.texture = texture
         self.vertical = vertical
         self.horizontal = horizontal
+        self.screen = pygame.display.set_mode((1280, 720))
 
     def render_environment(self):
-        screen = pygame.display.set_mode((1280, 720))
-        return screen.fill(self.texture)
+        return self.screen.fill(self.texture)

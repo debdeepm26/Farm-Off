@@ -6,8 +6,8 @@ from environment import Environment
 def main():
     # pygame setup
     pygame.init()
-    environment = Environment("purple", 32, 46)
-    clock = pygame.time.Clock()
+    environment = Environment("green", 32, 46)
+    # screen = pygame.display.set_mode((1280, 720))
     running = True
 
     while running:
@@ -20,8 +20,6 @@ def main():
         environment.render_environment()
 
         pygame.display.flip()
-        #
-        clock.tick(60)  # limits FPS to 60
 
     pygame.quit()
 
