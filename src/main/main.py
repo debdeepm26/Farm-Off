@@ -1,27 +1,24 @@
 # Example file showing a basic pygame "game loop"
+import os
 import pygame
-from environment import Environment
+from main_menu import MainMenu
 
 
 def main():
-    # pygame setup
+    os.environ['SDL_VIDEO_CENTERED'] = '1'
     pygame.init()
-    environment = Environment("green", 32, 46)
-    # screen = pygame.display.set_mode((1280, 720))
-    running = True
+    pygame.display.set_caption('Farm Off')
 
-    while running:
-        # poll for events
-        # pygame.QUIT event means the user clicked X to close your window
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                running = False
+    info = pygame.display.Info()
+    screen_width, screen_height = info.current_w - 200, info.current_h - 150
 
-        environment.render_environment()
+    game_display = pygame.display.set_mode((screen_width, screen_height), pygame.RESIZABLE)
 
-        pygame.display.flip()
+    main_menu = MainMenu(game_display)
+    main_menu.render()
 
     pygame.quit()
+    quit()
 
 
 if __name__ == "__main__":
