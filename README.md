@@ -25,4 +25,5 @@ Watch the gameplay [here](https://)
 - Debdeep Mohanty
 - Ganesh Prasad
 - Saaber Pourmotabbed
+- Amith Hiremath
 
