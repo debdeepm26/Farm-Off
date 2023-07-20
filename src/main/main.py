@@ -2,7 +2,6 @@
 import os
 import pygame
 from main_menu import MainMenu
-from game_loop import GameLoop
 
 
 def main():
