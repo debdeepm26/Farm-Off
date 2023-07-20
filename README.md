@@ -11,7 +11,7 @@ Watch the gameplay [here](https://)
 ### Install locally
 1. Clone the repository
 2. Run `pip install -r requirements.txt`
-3. Navigate to [src/main](src/main)
+3. Navigate to [src/main/](src/main/)
 4. Run `main.py`
 
 ## How to Play
