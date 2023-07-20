@@ -4,7 +4,7 @@
 ![](src/resources/farmoff.gif)
 
 ## YouTube Video
-Watch the gameplay [here](https://)
+Watch the gameplay [here](https://youtu.be/asfpWljgQko)
 
 ## Repo Setup
 
