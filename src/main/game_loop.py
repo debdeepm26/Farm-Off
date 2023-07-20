@@ -53,7 +53,7 @@ class GameLoop:
                     quit()
 
             current_time = time.time() - start_time
-            num_popups = 300
+            num_popups = 5
 
             # field render
             self.game_display.fill("black")
@@ -67,6 +67,9 @@ class GameLoop:
                 if player_num == 1:
                     if players[0].score == num_popups:
                         self.show_popup("Green collected; " + str(players[0].score) + "Corns: " + "in 60 seconds", self.game_display, width, height)
+                        environment_flag = False
+                    else:
+                        self.show_popup("You Loose!!!", self.game_display, width, height)
                         environment_flag = False
                 else:
                     if players[0].score > players[1].score:
