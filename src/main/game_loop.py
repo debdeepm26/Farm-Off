@@ -53,7 +53,7 @@ class GameLoop:
                     quit()
 
             current_time = time.time() - start_time
-            num_popups = 15
+            num_popups = 25
 
             # field render
             self.game_display.fill("black")
