@@ -20,6 +20,8 @@ class Player:
         else:
             self.image = self.image_right
 
+        self.score = 0
+
     def update_pos(self, x, y):
         self.curr_x = x
         self.curr_y = y

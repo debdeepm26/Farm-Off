@@ -13,7 +13,7 @@ def main():
     info = pygame.display.Info()
     screen_width, screen_height = info.current_w - 200, info.current_h - 150
 
-    game_display = pygame.display.set_mode((screen_width, screen_height), pygame.RESIZABLE)
+    game_display = pygame.display.set_mode((screen_width, screen_height), pygame.SCALED)
 
     main_menu = MainMenu(game_display)
 
