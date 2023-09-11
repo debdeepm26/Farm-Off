@@ -1,4 +1,5 @@
 # Example file showing a basic pygame "game loop"
+import sys
 import pygame
 import time
 from utils import Utils
@@ -62,7 +63,7 @@ class MainMenu:
     @staticmethod
     def quit_game():
         pygame.quit()
-        quit()
+        sys.exit()
 
     def render(self):
         intro = True

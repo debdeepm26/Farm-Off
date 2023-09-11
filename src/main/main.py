@@ -1,5 +1,6 @@
 # Example file showing a basic pygame "game loop"
 import os
+import sys
 import pygame
 from main_menu import MainMenu
 
@@ -19,7 +20,7 @@ def main():
     main_menu.render()
 
     pygame.quit()
-    quit()
+    sys.exit()
 
 
 if __name__ == "__main__":
